@@ -17,6 +17,21 @@
             </button>
         </mat-toolbar-row>
     </mat-toolbar>
+    <div>
+        <ul style="list-style-type: none;">
+            <li *ngFor="let item of products">
+                <mat-card style="margin: 10px;">
+                    <mat-card-header>
+                      <mat-card-title>{{item.product}}</mat-card-title>
+                      <mat-card-subtitle>{{item.cost}}</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-actions>
+                      <button mat-raised-button color='primary'>Add To Cart</button>
+                    </mat-card-actions>
+                  </mat-card>
+            </li>
+        </ul>
+    </div>
 </body>
 
 </html>

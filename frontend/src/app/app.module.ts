@@ -9,6 +9,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -24,7 +25,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
