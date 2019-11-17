@@ -10,13 +10,15 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatCardModule} from '@angular/material/card';
+import { CartComponent } from './cart/cart.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductListCompComponent
+    ProductListCompComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
