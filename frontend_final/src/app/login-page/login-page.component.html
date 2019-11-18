@@ -1,0 +1,43 @@
+<html>
+    <body>
+
+        <h1 style="height: 100px; line-height: 90px; background-color: lavender;color:rgb(231, 38, 231); font-size: xx-large; font-family: palatino; text-align: center;">WELCOME!</h1>
+        <h2 style="height: 100px; line-height: 90px; background-color: lavender;color:rgb(231, 38, 231); font-size: xx-large; font-family: palatino; text-align: center;">Please fill out this form</h2>
+       
+        <mat-form-field>
+            <input matInput placeholder="Name" >
+        </mat-form-field>
+        <br>
+        <br>
+        <mat-form-field >
+            <input matInput placeholder="Email id" >
+        </mat-form-field>
+        <br>
+        <br>
+        <mat-form-field >
+            <input matInput placeholder="Phone number" >
+            <mat-hint>Maximum 10 characters</mat-hint>
+        </mat-form-field>
+        <!--<mat-form-field class="rung">
+            <input matInput [formControl]="selectRung" [(ngModel)]="rung"
+            placeholder="Rung" type="number" pattern="^\d*[0-9]\d*$"
+            name="rung" [value]="rung" min="0" id="rung"
+              required="true">
+              <mat-error *ngIf="selectRung.hasError('required')">Rung is required!</mat-error>
+              <mat-error *ngIf="selectRung.hasError('pattern')">Only positive or 0!</mat-error>
+          </mat-form-field>-->
+            
+        <br>
+        <br>
+        <mat-form-field >
+            <input matInput placeholder="Address" >
+        </mat-form-field>
+        <br>
+        <br>
+        <a mat-fab href="http://localhost:4200/">submit</a>
+        
+        
+
+   
+    </body>
+</html>

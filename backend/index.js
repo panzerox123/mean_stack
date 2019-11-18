@@ -24,12 +24,11 @@ app.get('/view_cart', async (req, res) => {
 
 app.post('/add_to_cart', async (req, res) => {
     console.log(req.body)
-    let {product,cost,quantity} = req.body
-    console.log(product + ' ' + quantity + ' ' + cost);
+    let {product,cost} = req.body
+    console.log(product + ' ' + cost);
     let newItem = new cart({
         product,
-        cost,
-        quantity
+        cost
     });
     newItem.save((err, crt) => {
         if (err) {
@@ -45,9 +44,9 @@ app.delete('/remove_from_cart', (req, res) => {
     item = req.query.item;
     console.log(item);
     cart.deleteOne({ product: item }, function (err) {
-        if (err) return handleError(err);
+        if (err) return handleError(err)
+        else return res.status(200);
     });
-    res.status(200).send('Delete successful');
 })
 
 app.listen(PORT, () => {

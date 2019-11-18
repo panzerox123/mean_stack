@@ -1,0 +1,18 @@
+
+
+<html>
+<body>
+
+<h1>Showing Slider</h1>
+
+
+<!--using two features of angular material: mat-slider and mat-fab-->
+
+<a mat-fab (click)="show = !show">{{show ? 'hide' : 'show'}}</a>
+<div *ngIf="show"><mat-slider></mat-slider></div>
+
+
+
+
+</body>
+</html>
